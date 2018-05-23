@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!--<link rel="stylesheet" href="../css/netSet.css">-->
+    <title>网络设置</title>
+    <style>
+       *{
+           padding: 0;
+           margin: 0;
+       }
+       body{
+           padding: 0;
+           margin: 0;
+           background-color: white;
+       }
+       .wrap{
+           font-size: 0.373rem;
+           width: 8.9rem;
+           height: 100%;
+           background-color: white;
+           padding-top: .6rem;
+           padding-left: .55rem;
+           padding-right: .55rem;
+           line-height: .8rem;
+           color: #4d4d4d;
+       }
+       b{
+           color: black;
+       }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <b>您的设备网络链接失败，可以尝试以下方法链接网络：</b><br/>
+        1、在设备的<b>“设置”-“WLAN”</b>设置面板中选择一个可用的<b>WLAN</b>热点接入。<br>
+        2、在设备的<b>“设置”-“移动网络”</b>设置面板中启用<b>“移动数据”</b>（启用后运营商可能会收取数据通信费用）。<br>
+        3、在设备的<b>“设置”-“应用管理”-“麦子秒到”-“无线数据”</b>选项中启用<b>“无线数据”</b>（启用后运营商可能会收取数据通信费用）。<br>
+        4、如果您已接入WLAN网络，请检查您所连接的<b>WLAN</b>热点是否已接入互联网，或该热点是否已允许您的设备访问互联网。
+    </div>
+</body>
+<script>
+document.getElementsByTagName('html')[0].style.fontSize = window.screen.width / 10 + 'px';
+</script>
+<script type="text/javascript" src="../js/jquery-3.1.0.min.js"></script>  
+</html>

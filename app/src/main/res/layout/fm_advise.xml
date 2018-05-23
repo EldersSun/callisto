@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <EditText
+        android:id="@+id/et_advise"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d150"
+        android:layout_margin="@dimen/d10"
+        android:padding="@dimen/d5"
+        android:textSize="@dimen/s14"
+        android:background="@color/whiteColor"
+        android:gravity="clip_vertical"
+        android:hint="请输入您的问题和建议" />
+
+    <Button
+        android:id="@+id/btn_advise"
+        style="@style/buttonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="提交" />
+
+
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/launcher"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/lead_TimeShow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/d20"
+        android:layout_marginTop="@dimen/d20"
+        android:background="@drawable/lead_bg"
+        android:gravity="center"
+        android:padding="@dimen/d5"
+        android:textColor="@color/loan_bank_text"
+        android:textSize="@dimen/s10"
+        android:visibility="gone" />
+
+
+</RelativeLayout>

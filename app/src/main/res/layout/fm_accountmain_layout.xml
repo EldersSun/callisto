@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/UserInfo_Laytou"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:background="@mipmap/ic_mine_bg_header"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/d10">
+
+            <com.miaodao.Sys.Widgets.RoundImageView
+                android:id="@+id/account_head"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:src="@mipmap/ic_mine_header" />
+
+            <TextView
+                android:id="@+id/account_Tel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/account_head"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/d30"
+                android:textColor="@color/whiteColor"
+                android:textSize="12sp" />
+
+
+            <TextView
+                android:id="@+id/tv_show_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/account_head"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/d30"
+                android:background="@drawable/account_login_btn_bg"
+                android:paddingBottom="@dimen/d10"
+                android:paddingLeft="@dimen/d20"
+                android:paddingRight="@dimen/d20"
+                android:paddingTop="@dimen/d10"
+                android:text="请登录"
+                android:textColor="@color/whiteColor"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+
+            <Button
+                android:id="@+id/account_sign"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/ic_sign"
+                android:padding="10dp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/appColor5"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/whiteColor"
+                android:orientation="vertical">
+
+                <!-- 我的银行卡 -->
+                <RelativeLayout
+                    android:id="@+id/account_car"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d50"
+                    android:background="@color/whiteColor"
+                    android:paddingLeft="@dimen/d20"
+                    android:paddingRight="@dimen/d20">
+
+
+                    <ImageView
+                        android:id="@+id/iv_1"
+                        android:layout_width="@dimen/d20"
+                        android:layout_height="@dimen/d20"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/ic_mine_card" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/d10"
+                        android:layout_toRightOf="@+id/iv_1"
+                        android:text="@string/account_message_1"
+                        android:textColor="@color/loan_big_text"
+                        android:textSize="@dimen/s14" />
+
+
+                    <ImageView
+                        android:layout_width="@dimen/d15"
+                        android:layout_height="@dimen/d15"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/icon_home_product_arrow" />
+
+
+                </RelativeLayout>
+
+
+                <View
+                    style="@style/LineViewStyle1"
+                    android:layout_marginLeft="@dimen/d20" />
+
+
+                <!-- 历史账单 -->
+                <RelativeLayout
+                    android:id="@+id/account_bill"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d50"
+                    android:background="@color/whiteColor"
+                    android:paddingLeft="@dimen/d20"
+                    android:paddingRight="@dimen/d20">
+
+
+                    <ImageView
+                        android:id="@+id/iv_2"
+                        android:layout_width="@dimen/d20"
+                        android:layout_height="@dimen/d20"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/ic_mine_bill" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/d10"
+                        android:layout_toRightOf="@+id/iv_2"
+                        android:text="@string/account_message_2"
+                        android:textColor="@color/loan_big_text"
+                        android:textSize="@dimen/s14" />
+
+
+                    <ImageView
+                        android:layout_width="@dimen/d15"
+                        android:layout_height="@dimen/d15"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/icon_home_product_arrow" />
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d10"
+                android:background="@color/whiteColor"
+                android:orientation="vertical">
+
+                <!-- 邀请好友 -->
+                <RelativeLayout
+                    android:id="@+id/account_share"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d50"
+                    android:background="@color/whiteColor"
+                    android:paddingLeft="@dimen/d20"
+                    android:paddingRight="@dimen/d20">
+
+
+                    <ImageView
+                        android:id="@+id/iv_3"
+                        android:layout_width="@dimen/d20"
+                        android:layout_height="@dimen/d20"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/ic_mine_share" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/d10"
+                        android:layout_toRightOf="@+id/iv_3"
+                        android:text="@string/account_message_3"
+                        android:textColor="@color/loan_big_text"
+                        android:textSize="@dimen/s14" />
+
+                    <TextView
+                        android:id="@+id/tv_invited_code"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/d20"
+                        android:textColor="@color/loan_big_text"
+                        android:textSize="@dimen/s14" />
+
+
+                    <ImageView
+                        android:layout_width="@dimen/d15"
+                        android:layout_height="@dimen/d15"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/icon_home_product_arrow" />
+
+
+                </RelativeLayout>
+
+
+                <View
+                    style="@style/LineViewStyle1"
+                    android:layout_marginLeft="@dimen/d20" />
+
+
+                <!-- 我的免息券 -->
+                <RelativeLayout
+                    android:id="@+id/account_ticket"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d50"
+                    android:background="@color/whiteColor"
+                    android:paddingLeft="@dimen/d20"
+                    android:paddingRight="@dimen/d20">
+
+
+                    <ImageView
+                        android:id="@+id/iv_4"
+                        android:layout_width="@dimen/d20"
+                        android:layout_height="@dimen/d20"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/ic_mine_ticket" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/d10"
+                        android:layout_toRightOf="@+id/iv_4"
+                        android:text="@string/account_message_4"
+                        android:textColor="@color/loan_big_text"
+                        android:textSize="@dimen/s14" />
+
+                    <TextView
+                        android:id="@+id/tv_coupon_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/d20"
+                        android:text="@string/account_message_10"
+                        android:textColor="@color/loan_big_text"
+                        android:textSize="@dimen/s14" />
+
+
+                    <ImageView
+                        android:layout_width="@dimen/d15"
+                        android:layout_height="@dimen/d15"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/icon_home_product_arrow" />
+
+
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <!-- 关于我们 -->
+            <RelativeLayout
+                android:id="@+id/account_star"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d50"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/whiteColor"
+                android:paddingLeft="@dimen/d20"
+                android:paddingRight="@dimen/d20">
+
+
+                <ImageView
+                    android:id="@+id/iv_5"
+                    android:layout_width="@dimen/d20"
+                    android:layout_height="@dimen/d20"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/ic_mygrade" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/d10"
+                    android:layout_toRightOf="@+id/iv_5"
+                    android:text="@string/account_message_5"
+                    android:textColor="@color/loan_big_text"
+                    android:textSize="@dimen/s14" />
+
+
+                <ImageView
+                    android:layout_width="@dimen/d15"
+                    android:layout_height="@dimen/d15"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/icon_home_product_arrow" />
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/whiteColor"
+                android:orientation="vertical">
+
+                <!-- 帮助中心 -->
+                <RelativeLayout
+                    android:id="@+id/account_help"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d50"
+                    android:background="@color/whiteColor"
+                    android:paddingLeft="@dimen/d20"
+                    android:paddingRight="@dimen/d20">
+
+
+                    <ImageView
+                        android:id="@+id/iv_6"
+                        android:layout_width="@dimen/d20"
+                        android:layout_height="@dimen/d20"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/ic_mine_help" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/d10"
+                        android:layout_toRightOf="@+id/iv_6"
+                        android:text="@string/account_message_6"
+                        android:textColor="@color/loan_big_text"
+                        android:textSize="@dimen/s14" />
+
+
+                    <ImageView
+                        android:layout_width="@dimen/d15"
+                        android:layout_height="@dimen/d15"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/icon_home_product_arrow" />
+
+
+                </RelativeLayout>
+
+                <View
+                    style="@style/LineViewStyle1"
+                    android:layout_marginLeft="@dimen/d20" />
+
+                <!-- 安全设置 -->
+                <RelativeLayout
+                    android:id="@+id/account_safe"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d50"
+                    android:background="@color/whiteColor"
+                    android:paddingLeft="@dimen/d20"
+                    android:paddingRight="@dimen/d20">
+
+
+                    <ImageView
+                        android:id="@+id/iv_7"
+                        android:layout_width="@dimen/d20"
+                        android:layout_height="@dimen/d20"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/ic_mine_safe" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/d10"
+                        android:layout_toRightOf="@+id/iv_7"
+                        android:text="@string/account_message_7"
+                        android:textColor="@color/loan_big_text"
+                        android:textSize="@dimen/s14" />
+
+
+                    <ImageView
+                        android:layout_width="@dimen/d15"
+                        android:layout_height="@dimen/d15"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/icon_home_product_arrow" />
+                </RelativeLayout>
+
+                <View
+                    style="@style/LineViewStyle1"
+                    android:layout_marginLeft="@dimen/d20" />
+
+                <!-- 更多 -->
+                <RelativeLayout
+                    android:id="@+id/account_more"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d50"
+                    android:background="@color/whiteColor"
+                    android:paddingLeft="@dimen/d20"
+                    android:paddingRight="@dimen/d20">
+
+
+                    <ImageView
+                        android:id="@+id/iv_8"
+                        android:layout_width="@dimen/d20"
+                        android:layout_height="@dimen/d20"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/ic_mine_more" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/d10"
+                        android:layout_toRightOf="@+id/iv_8"
+                        android:text="@string/account_message_8"
+                        android:textColor="@color/loan_big_text"
+                        android:textSize="@dimen/s14" />
+
+
+                    <ImageView
+                        android:layout_width="@dimen/d15"
+                        android:layout_height="@dimen/d15"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/icon_home_product_arrow" />
+
+
+                </RelativeLayout>
+
+                <View style="@style/LineViewStyle1" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/account_loginOut"
+            style="@style/buttonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/loginOut" />
+
+    </LinearLayout>
+</ScrollView>

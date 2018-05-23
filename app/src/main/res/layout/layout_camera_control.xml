@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blackColor">
+
+
+    <CheckBox
+        android:id="@+id/control_flash"
+        android:layout_width="@dimen/d30"
+        android:layout_height="@dimen/d30"
+        android:layout_marginTop="@dimen/d30"
+        android:button="@null"
+        android:background="@drawable/id_camera_flash"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/control_take"
+        android:layout_width="@dimen/d60"
+        android:layout_height="@dimen/d60"
+        android:layout_marginLeft="@dimen/d10"
+        android:layout_marginRight="@dimen/d10"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/picture"
+        android:gravity="center"
+        android:textSize="@dimen/s16"
+        android:background="@drawable/ic_idcard_btn_shot_pressed"
+        android:textColor="@color/whiteColor"/>
+
+
+    <TextView
+        android:id="@+id/control_cancel"
+        android:layout_width="@dimen/d60"
+        android:layout_height="@dimen/d60"
+        android:layout_marginLeft="@dimen/d10"
+        android:layout_marginRight="@dimen/d10"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="@dimen/d30"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/cancel"
+        android:gravity="center"
+        android:textSize="@dimen/s16"
+        android:textColor="@color/whiteColor"/>
+
+
+
+</RelativeLayout>

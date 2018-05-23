@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d90"
+        android:layout_marginLeft="@dimen/d10"
+        android:layout_marginRight="@dimen/d10"
+        android:layout_marginTop="@dimen/d10"
+        android:background="@drawable/wait_repay_item_bg"
+        android:orientation="horizontal">
+
+
+        <!-- 左边布局 -->
+        <LinearLayout
+            android:id="@+id/ll_left_parent"
+            android:layout_width="@dimen/d10"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/coupon_can_use_bg"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/tv_coupon_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/d13"
+                    android:textColor="@color/whiteColor"
+                    android:textSize="@dimen/s40"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_coupon_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/d3"
+                    android:layout_marginTop="@dimen/d13"
+                    android:textColor="@color/whiteColor"
+                    android:textSize="@dimen/s11"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_coupon_type_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:textColor="@color/whiteColor"
+                android:textSize="@dimen/s11" />
+
+        </LinearLayout>
+
+        <!-- 上部金额信息 -->
+        <LinearLayout
+            android:layout_width="@dimen/d10"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/d60">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/d10"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_coup_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/loan_big_text"
+                        android:textSize="@dimen/s15" />
+
+                    <TextView
+                        android:id="@+id/tv_coupon_expired"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/d5"
+                        android:textColor="@color/loan_bank_text"
+                        android:textSize="@dimen/s12" />
+
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/tv_coupon_use_btn"
+                    android:layout_width="@dimen/d60"
+                    android:layout_height="22dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="@dimen/d10"
+                    android:layout_marginRight="@dimen/d10"
+                    android:background="@drawable/coupon_use_btn"
+                    android:gravity="center"
+                    android:text="立即使用"
+                    android:textColor="@color/appColor"
+                    android:textSize="11sp"
+                    android:visibility="gone" />
+
+
+                <ImageView
+                    android:id="@+id/iv_coupon_used"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:padding="@dimen/d5"
+                    android:src="@drawable/coupon_used"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d1"
+                android:layout_marginLeft="@dimen/d10"
+                android:layout_marginRight="@dimen/d10"
+                android:background="#F1F3F6" />
+
+            <!-- 描述 -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tv_loan_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/d10"
+                    android:text="详细信息"
+                    android:textColor="@color/loan_bank_text"
+                    android:textSize="@dimen/s12" />
+
+
+                <ImageView
+                    android:id="@+id/iv_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="@dimen/d15"
+                    android:src="@drawable/coupon_detail"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

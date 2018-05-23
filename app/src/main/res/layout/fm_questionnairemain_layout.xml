@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whiteColor"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/d10"
+        android:drawableLeft="@drawable/ic_survey_questionnaire"
+        android:drawablePadding="10dp"
+        android:text="@string/withdrawals_message_17"
+        android:textColor="@color/appColor"
+        android:textSize="18sp" />
+
+    <View style="@style/LineViewStyle" />
+
+    <TextView
+        android:id="@+id/tv_question_tip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/withdrawals_message_18"
+        android:layout_marginLeft="@dimen/d20"
+        android:layout_marginRight="@dimen/d20"
+        android:layout_marginTop="@dimen/d10"
+        android:textColor="@color/loan_big_text" />
+
+
+    <Button
+        android:id="@+id/btn_question"
+        style="@style/buttonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/d150"
+        android:layout_alignParentBottom="true"
+        android:text="@string/withdrawals_message_19" />
+
+
+</LinearLayout>

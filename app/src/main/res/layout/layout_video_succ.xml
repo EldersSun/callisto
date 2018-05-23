@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/whiteColor"
+    android:id="@+id/ll_video_succ"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/d30"
+        android:gravity="center_horizontal"
+        android:text="@string/video_succ_tip"
+        android:textColor="@color/loan_big_text"
+        android:textSize="@dimen/s20" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/d60"
+        android:layout_marginTop="@dimen/d30"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/tv_retake_video"
+            android:layout_width="@dimen/d0"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/d40"
+            android:layout_marginRight="@dimen/d10"
+            android:layout_weight="1"
+            android:background="@drawable/video_succ_retake"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/d5"
+            android:text="@string/video_succ_retake_tip"
+            android:textColor="@color/appColor"
+            android:textSize="@dimen/s25" />
+
+        <TextView
+            android:id="@+id/tv_confirm_video"
+            android:layout_width="@dimen/d0"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/d10"
+            android:layout_marginRight="@dimen/d40"
+            android:layout_weight="1"
+            android:background="@drawable/btn_shape_backgroup_color"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/d5"
+            android:text="@string/video_succ_ok_tip"
+            android:textColor="@color/whiteColor"
+            android:textSize="@dimen/s25" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

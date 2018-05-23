@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_id_card_mask"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/id_front_mask"
+    android:orientation="vertical">
+
+
+    <!-- 身份证提示文字 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/d80"
+        android:layout_marginTop="@dimen/d15"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请拍摄"
+            android:textColor="@color/whiteColor"
+            android:textSize="@dimen/s14" />
+
+        <TextView
+            android:id="@+id/tv_tip1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/id_camera_tip_front"
+            android:textColor="@color/appColor"
+            android:textSize="@dimen/s14" />
+
+    </LinearLayout>
+
+    <!-- 身份证遮层 -->
+    <ImageView
+        android:id="@+id/iv_id_show_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/d15"
+        android:src="@drawable/ic_idcard_front_skeleton"
+        android:visibility="invisible" />
+
+
+    <!-- 底部展示栏 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/d20"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_id_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/d70"
+            android:src="@drawable/ic_tips_id_back" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/d10"
+            android:text="请保持身份证整体在区域内,并对齐线框边缘"
+            android:textColor="@color/whiteColor"
+            android:textSize="@dimen/s14" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

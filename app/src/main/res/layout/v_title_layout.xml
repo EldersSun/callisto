@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/title_layout"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/d40"
+    android:background="@color/appColor">
+
+    <ImageView
+        android:id="@+id/title_back"
+        android:layout_width="@dimen/d45"
+        android:layout_height="@dimen/d40"
+        android:layout_centerVertical="true"
+        android:paddingLeft="@dimen/d10"
+        android:paddingRight="@dimen/d10"
+        android:src="@mipmap/btn_back_normal" />
+
+
+    <TextView
+        android:id="@+id/title_tvShow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/app_name"
+        android:textColor="@color/whiteColor"
+        android:textSize="@dimen/uiContentTextSize_x" />
+
+    <Button
+        android:id="@+id/title_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/nav_btn_message_default"
+        android:textColor="@color/whiteColor" />
+
+
+    <TextView
+        android:id="@+id/tv_title_right"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/d40"
+        android:layout_alignParentRight="true"
+        android:gravity="center_vertical"
+        android:paddingRight="@dimen/d10"
+        android:text="使用说明"
+        android:textColor="@color/whiteColor"
+        android:textSize="@dimen/s14"
+        android:visibility="gone" />
+
+
+    <TextView
+        android:id="@+id/title_menuNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/d10"
+        android:layout_marginTop="@dimen/d8"
+        android:background="@drawable/redspot"
+        android:gravity="center"
+        android:visibility="gone"
+        android:textColor="@color/whiteColor"
+        android:textSize="@dimen/s10"/>
+
+
+</RelativeLayout>

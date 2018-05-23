@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/login_dialog_title_bg"
+        android:gravity="center"
+        android:text="登录密码验证"
+        android:textColor="@color/color666666"
+        android:textSize="@dimen/s18" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d1"
+        android:background="@color/linearColor" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@color/whiteColor"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_phone_num"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d40"
+            android:gravity="center"
+            android:textSize="@dimen/s14" />
+
+
+        <!--android:background="@drawable/qh_login_input_bg"-->
+        <EditText
+            android:id="@+id/et_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d48"
+            android:layout_marginLeft="@dimen/d20"
+            android:layout_marginRight="@dimen/d20"
+            android:gravity="center"
+            android:hint="@string/login_dialog_hint"
+            android:background="@drawable/login_input_bg"
+            android:maxLength="12"
+            android:padding="@dimen/d5"
+            android:password="true"
+            android:textColor="@color/color666666"
+            android:textSize="@dimen/s14" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_cancle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/login_dialog_left_bg"
+            android:text="取消"
+            android:textColor="@color/blue_light"
+            android:textSize="@dimen/s14" />
+
+        <View
+            android:layout_width="@dimen/d1"
+            android:layout_height="match_parent"
+            android:background="@color/linearColor" />
+
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/login_dialog_right_bg"
+            android:text="确认"
+            android:textColor="@color/blue_light"
+            android:textSize="@dimen/s14" />
+    </LinearLayout>
+
+</LinearLayout>
+

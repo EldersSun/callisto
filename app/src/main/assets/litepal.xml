@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<litepal>
+
+    <dbname value="databasecache" />
+    <version value="4" />
+
+    <list>
+        <mapping class="com.maizi.cache.CacheModel" />
+        <mapping class="com.miaodao.Fragment.Loan.Apply.bean.BindCard" />
+        <mapping class="com.miaodao.Fragment.Product.bean.AddressContent" />
+    </list>
+
+</litepal>

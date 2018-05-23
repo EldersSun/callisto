@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whiteColor"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- 朗读的时候文字界面 -->
+        <include
+            layout="@layout/layout_reading" />
+
+
+        <!-- 录像成功后提示界面 -->
+        <include
+            layout="@layout/layout_video_succ"
+            android:visibility="gone" />
+
+
+        <!-- 底部界面显示 -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!-- 录像surfaceView -->
+            <SurfaceView
+                android:id="@+id/sf_record"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <!-- 播放录像surfaceView -->
+            <com.miaodao.Sys.Widgets.PlayVideoView
+                android:id="@+id/play_record"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone" />
+
+            <!-- 界面上的遮罩层 -->
+            <ImageView
+                android:id="@+id/iv_video_mask"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/video_mask" />
+
+
+            <!-- 取消按钮 -->
+            <TextView
+                android:id="@+id/tv_video_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/d10"
+                android:padding="@dimen/d30"
+                android:text="@string/cancel"
+                android:textColor="@color/whiteColor"
+                android:textSize="@dimen/s16" />
+
+            <!-- 提示文字 -->
+            <LinearLayout
+                android:id="@+id/ll_record_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/d40"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/d10">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/global_icon_tips" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/d5"
+                    android:text="@string/video_tip"
+                    android:textColor="@color/video_tip"
+                    android:textSize="@dimen/s12" />
+
+
+            </LinearLayout>
+
+
+            <!-- 点击重新播放录像 -->
+            <LinearLayout
+                android:id="@+id/ll_relay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_video_replay_light" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/d5"
+                    android:text="再听一遍"
+                    android:textColor="@color/whiteColor"
+                    android:textSize="@dimen/s13" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tv_keep_face_center_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="请保持脸部在线框内"
+                android:textColor="@color/redColor"
+                android:textSize="@dimen/s14"
+                android:visibility="gone" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <!-- 开始朗读倒计时 -->
+    <TextView
+        android:id="@+id/video_time"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ccc"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="@dimen/s200"
+        android:visibility="gone" />
+
+</RelativeLayout>

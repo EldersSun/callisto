@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/whiteColor"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/viewPaddingTop"
+            android:drawableLeft="@drawable/ic_archives_error"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:text="@string/perfeceInfo_message_1"
+            android:textColor="@color/appColor"
+            android:textSize="@dimen/contentTextSize_x" />
+
+        <View style="@style/LineViewStyle" />
+
+        <TextView
+            style="@style/TvShowMessageStyle"
+            android:gravity="center"
+            android:text="@string/perfeceInfo_message_2" />
+
+        <!-- 身份信息 -->
+        <LinearLayout
+            android:id="@+id/perfectInfo_idInfo_layout"
+            style="@style/SummaryAlLayoutStyle">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp">
+
+                <TextView
+                    style="@style/SummaryAlTvShowStyle"
+                    android:text="@string/perfeceInfo_message_3" />
+
+                <Button
+                    android:id="@+id/perfectInfo_idInfo_setting"
+                    style="@style/SummaryAllSettingStyle"
+                    android:text="@string/setting" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/perfectInfo_idInfo_MsgTvShow"
+                style="@style/SummaryAllContentStyle"
+                android:text="@string/perfeceInfo_message_4" />
+        </LinearLayout>
+
+        <!-- 银行卡信息 -->
+        <LinearLayout
+            android:id="@+id/perfectInfo_idCard_layout"
+            style="@style/SummaryAlLayoutStyle">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp">
+
+                <TextView
+                    style="@style/SummaryAlTvShowStyle"
+                    android:text="@string/perfeceInfo_message_5" />
+
+                <Button
+                    android:id="@+id/perfectInfo_idCard_setting"
+                    style="@style/SummaryAllSettingStyle"
+                    android:text="@string/setting" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/perfectInfo_idCard_MsgTvShow"
+                style="@style/SummaryAllContentStyle"
+                android:text="@string/perfeceInfo_message_6" />
+        </LinearLayout>
+
+        <!-- 基本信息 -->
+        <LinearLayout
+            android:id="@+id/perfectInfo_basic_layout"
+            style="@style/SummaryAlLayoutStyle">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp">
+
+                <TextView
+                    style="@style/SummaryAlTvShowStyle"
+                    android:text="@string/perfeceInfo_message_7" />
+
+                <Button
+                    android:id="@+id/perfectInfo_basic_setting"
+                    style="@style/SummaryAllSettingStyle"
+                    android:text="@string/setting" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/perfectInfo_basic_MsgTvShow"
+                style="@style/SummaryAllContentStyle"
+                android:text="@string/perfeceInfo_message_8" />
+        </LinearLayout>
+
+        <!-- 联系人信息 -->
+        <LinearLayout
+            android:id="@+id/perfectInfo_Contacts_layout"
+            style="@style/SummaryAlLayoutStyle">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp">
+
+                <TextView
+                    style="@style/SummaryAlTvShowStyle"
+                    android:text="@string/perfeceInfo_message_9" />
+
+                <Button
+                    android:id="@+id/perfectInfo_Contacts_setting"
+                    style="@style/SummaryAllSettingStyle"
+                    android:text="@string/setting" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/perfectInfo_Contacts_MsgTvShow"
+                style="@style/SummaryAllContentStyle"
+                android:text="@string/perfeceInfo_message_10" />
+        </LinearLayout>
+
+        <!-- 影像信息 -->
+        <LinearLayout
+            android:id="@+id/perfectInfo_video_layout"
+            style="@style/SummaryAlLayoutStyle">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp">
+
+                <TextView
+                    style="@style/SummaryAlTvShowStyle"
+                    android:text="@string/perfeceInfo_message_11" />
+
+                <Button
+                    android:id="@+id/perfectInfo_video_setting"
+                    style="@style/SummaryAllSettingStyle"
+                    android:text="@string/setting" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/perfectInfo_video_MsgTvShow"
+                style="@style/SummaryAllContentStyle"
+                android:text="@string/perfeceInfo_message_12" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/perfectInfo_submit"
+            style="@style/buttonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/PerfectInfo"
+            android:visibility="visible" />
+
+    </LinearLayout>
+</ScrollView>

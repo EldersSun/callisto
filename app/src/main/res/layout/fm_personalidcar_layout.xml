@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/TvShowMessageStyle"
+        android:drawableLeft="@drawable/global_icon_tips"
+        android:drawablePadding="@dimen/d3"
+        android:lines="1"
+        android:text="@string/personal_message" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/viewMarginpadding"
+        android:background="@color/whiteColor"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="@string/personal_message_1"
+                android:textSize="@dimen/s14" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="@string/personal_message_2"
+                android:textSize="@dimen/s14" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp">
+
+
+            <!-- 身份证正面照 -->
+            <RelativeLayout
+                android:layout_width="@dimen/d0"
+                android:layout_height="95dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1">
+
+
+                <com.miaodao.Sys.Widgets.ShapedImageView
+                    android:id="@+id/id_front"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_idcard_img_default_front"
+                    app:round_radius="@dimen/d5"
+                    app:shape_mode="round_rect"
+                    app:stroke_color="@color/loan_time_text"
+                    app:stroke_width="@dimen/d1" />
+
+
+                <TextView
+                    android:id="@+id/tv_front_already"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/bg_video_submited"
+                    android:gravity="center_horizontal"
+                    android:paddingLeft="@dimen/d2"
+                    android:paddingTop="@dimen/d2"
+                    android:text="@string/camera_take_already"
+                    android:textColor="@color/whiteColor"
+                    android:textSize="@dimen/s12"
+                    android:visibility="gone" />
+
+
+                <ImageView
+                    android:id="@+id/front_retake"
+                    android:layout_width="@dimen/d50"
+                    android:layout_height="@dimen/d50"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/btn_idcarimgshow_selector"
+                    android:visibility="gone" />
+
+
+            </RelativeLayout>
+
+            <!-- 身份证反面照 -->
+            <RelativeLayout
+                android:layout_width="@dimen/d0"
+                android:layout_height="95dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1">
+
+                <com.miaodao.Sys.Widgets.ShapedImageView
+                    android:id="@+id/id_back"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_idcard_img_default_back"
+                    app:round_radius="@dimen/d5"
+                    app:shape_mode="round_rect"
+                    app:stroke_color="@color/loan_time_text"
+                    app:stroke_width="@dimen/d1" />
+
+
+                <TextView
+                    android:id="@+id/tv_back_already"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/bg_video_submited"
+                    android:gravity="center_horizontal"
+                    android:paddingLeft="@dimen/d2"
+                    android:paddingTop="@dimen/d2"
+                    android:text="@string/camera_take_already"
+                    android:textColor="@color/whiteColor"
+                    android:textSize="@dimen/s12"
+                    android:visibility="gone" />
+
+
+                <ImageView
+                    android:id="@+id/back_retake"
+                    android:layout_width="@dimen/d50"
+                    android:layout_height="@dimen/d50"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/btn_idcarimgshow_selector"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/personal_tvShowLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/viewPaddingTop"
+        android:background="@color/whiteColor"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d45"
+            android:background="@color/whiteColor"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/d15">
+
+            <TextView
+                android:layout_width="@dimen/d0"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/name1"
+                android:textColor="@color/loan_detail_text"
+                android:textSize="@dimen/s14" />
+
+            <EditText
+                android:id="@+id/personal_Name"
+                android:layout_width="@dimen/d0"
+                android:layout_height="wrap_content"
+                android:layout_weight="8"
+                android:background="@null"
+                android:hint="@string/personal_message_6"
+                android:textColor="@color/loan_bank_text"
+                android:textSize="@dimen/s14" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/d1"
+            android:layout_marginLeft="@dimen/d80"
+            android:layout_marginRight="@dimen/d20"
+            android:background="@color/line_color" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d45"
+            android:background="@color/whiteColor"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/d15">
+
+            <TextView
+                android:layout_width="@dimen/d0"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/idNumber"
+                android:textColor="@color/loan_detail_text"
+                android:textSize="@dimen/s14" />
+
+            <EditText
+                android:id="@+id/personal_idCarNum"
+                android:layout_width="@dimen/d0"
+                android:layout_height="wrap_content"
+                android:layout_weight="8"
+                android:background="@null"
+                android:hint="@string/personal_message_7"
+                android:inputType="number"
+                android:textColor="@color/loan_bank_text"
+                android:textSize="@dimen/s14" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+
+        android:background="@color/whiteColor"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <com.miaodao.Sys.Widgets.UiContentView.UiContentView
+            style="@style/UiContentStyle_lvShow1"
+            app:uiContentGracity="left"
+            app:uiContentHint="@string/personal_message_6"
+            app:uiContentImgBackgRoundResource="@null"
+            app:uiContentTitleText="@string/name" />
+
+        <View style="@style/LineViewStyle" />
+
+        <com.miaodao.Sys.Widgets.UiContentView.UiContentView
+            style="@style/UiContentStyle_lvShow1"
+            app:uiContentGracity="left"
+            app:uiContentHint="@string/personal_message_7"
+            app:uiContentImgBackgRoundResource="@null"
+            app:uiContentTitleText="@string/idNumber" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="@string/personal_message_8"
+        android:textColor="@color/textColor"
+        android:textSize="@dimen/s12" />
+
+    <Button
+        android:id="@+id/personal_submit"
+        style="@style/buttonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/personal_message_3" />
+
+</LinearLayout>

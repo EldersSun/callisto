@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- 设置手势密码 -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:layout_marginTop="@dimen/d10"
+        android:orientation="horizontal"
+        android:background="@color/whiteColor"
+        android:paddingLeft="@dimen/viewMarginpadding"
+        android:paddingRight="@dimen/viewMarginpadding">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="@string/security_message_2"
+            android:layout_centerVertical="true"
+            android:textColor="@color/color666666"
+            android:textSize="@dimen/content_l" />
+
+        <CheckBox
+            android:id="@+id/gesture_checkbox"
+            android:layout_width="45dp"
+            android:layout_height="@dimen/d24"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/d10"
+            android:background="@drawable/checkbox_style"
+            android:button="@null"
+            android:checked="false" />
+
+    </RelativeLayout>
+
+
+    <!-- 修改手势密码 -->
+    <RelativeLayout
+        android:id="@+id/rl_modify"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:layout_marginTop="@dimen/d1"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:background="@color/whiteColor"
+        android:paddingLeft="@dimen/viewMarginpadding"
+        android:visibility="gone"
+        android:paddingRight="@dimen/viewMarginpadding">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="@string/gesture_modify"
+            android:textColor="@color/color666666"
+            android:textSize="@dimen/content_l" />
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/icon_home_product_arrow" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

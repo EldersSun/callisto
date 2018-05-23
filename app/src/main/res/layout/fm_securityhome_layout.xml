@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/security_setUserLoginPwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/d5"
+        android:background="@color/whiteColor"
+        android:drawableRight="@mipmap/icon_home_product_arrow"
+        android:gravity="left|center_vertical"
+        android:minHeight="@dimen/RowHeight"
+        android:paddingLeft="@dimen/viewMarginpadding"
+        android:paddingRight="@dimen/viewMarginpadding"
+        android:text="@string/security_message_1"
+        android:textColor="@color/loan_big_text"
+        android:textSize="@dimen/content_l" />
+
+    <Button
+        android:id="@+id/security_setGesture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/d1"
+        android:background="@color/whiteColor"
+        android:drawableRight="@mipmap/icon_home_product_arrow"
+        android:gravity="left|center_vertical"
+        android:minHeight="@dimen/RowHeight"
+        android:paddingLeft="@dimen/viewMarginpadding"
+        android:paddingRight="@dimen/viewMarginpadding"
+        android:text="@string/security_message_2"
+        android:textColor="@color/loan_big_text"
+        android:textSize="@dimen/content_l" />
+
+    <Button
+        android:id="@+id/security_setAccountPwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/d1"
+        android:visibility="gone"
+        android:background="@color/whiteColor"
+        android:drawableRight="@mipmap/icon_home_product_arrow"
+        android:gravity="left|center_vertical"
+        android:minHeight="@dimen/RowHeight"
+        android:paddingLeft="@dimen/viewMarginpadding"
+        android:paddingRight="@dimen/viewMarginpadding"
+        android:text="@string/security_message_3"
+        android:textColor="@color/loan_big_text"
+        android:textSize="@dimen/content_l" />
+
+</LinearLayout>

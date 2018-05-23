@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/whiteColor"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/TvShowMessageStyle"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:drawableLeft="@drawable/global_icon_tips"
+            android:drawablePadding="@dimen/d3"
+            android:lines="1"
+            android:text="@string/basic_message_3" />
+
+        <Button
+            android:id="@+id/basic_inputStandard"
+            style="@style/TvShowMessageStyle"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:lines="1"
+            android:text="@string/basic_message_4"
+            android:textColor="@color/appColor"
+            android:textSize="@dimen/s12" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d90"
+        android:layout_marginTop="@dimen/viewPaddingTop"
+        android:background="@color/whiteColor"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:id="@+id/show_address"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d45"
+            android:paddingLeft="@dimen/d15">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/whiteColor"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/d0"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="@string/basic_message_5"
+                    android:textColor="@color/loan_detail_text"
+                    android:textSize="@dimen/s14" />
+
+
+                <TextView
+                    android:id="@+id/basic_city"
+                    android:layout_width="@dimen/d0"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="8"
+                    android:text="@string/basic_message_5"
+                    android:textColor="@color/loan_bank_text"
+                    android:textSize="@dimen/s14" />
+            </LinearLayout>
+
+
+            <ImageView
+                android:layout_width="@dimen/d20"
+                android:layout_height="@dimen/d20"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/d20"
+                android:src="@drawable/ic_archive_add_card" />
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/d1"
+            android:layout_marginLeft="@dimen/d80"
+            android:layout_marginRight="@dimen/d20"
+            android:background="@color/line_color" />
+
+        <EditText
+            android:id="@+id/basic_infoAddrs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparentColor"
+            android:focusableInTouchMode="true"
+            android:hint="@string/basic_message_6"
+            android:minHeight="@dimen/d45"
+            android:paddingLeft="@dimen/d87"
+            android:textSize="@dimen/s14" />
+    </LinearLayout>
+
+    <TextView
+        style="@style/TvShowMessageStyle2"
+        android:background="@color/transparentColor"
+        android:drawableLeft="@drawable/global_icon_tips"
+        android:drawablePadding="@dimen/d3"
+        android:lines="1"
+        android:text="@string/basic_message_7"
+        android:textColor="@color/appColor" />
+
+
+    <RelativeLayout
+        android:id="@+id/work_address"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d45"
+        android:background="@color/whiteColor"
+        android:paddingLeft="@dimen/d15">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/whiteColor"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/d0"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/basic_message_8"
+                android:textColor="@color/loan_detail_text"
+                android:textSize="@dimen/s14" />
+
+
+            <TextView
+                android:id="@+id/basic_workAddrs"
+                android:layout_width="@dimen/d0"
+                android:layout_height="wrap_content"
+                android:layout_weight="8"
+                android:text="@string/basic_message_9"
+                android:textColor="@color/loan_bank_text"
+                android:textSize="@dimen/s14" />
+        </LinearLayout>
+
+
+        <ImageView
+            android:layout_width="@dimen/d20"
+            android:layout_height="@dimen/d20"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/d20"
+            android:src="@drawable/ic_archive_add_card" />
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/viewPaddingTop"
+        android:background="@color/whiteColor"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d45"
+            android:background="@color/whiteColor"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/d15">
+
+            <TextView
+                android:layout_width="@dimen/d0"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/basic_message_10"
+                android:textColor="@color/loan_detail_text"
+                android:textSize="@dimen/s14" />
+
+            <EditText
+                android:id="@+id/basic_workName"
+                android:layout_width="@dimen/d0"
+                android:layout_height="wrap_content"
+                android:layout_weight="8"
+                android:background="@null"
+                android:hint="@string/basic_message_11"
+                android:textColor="@color/loan_bank_text"
+                android:textSize="@dimen/s14" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/d1"
+            android:layout_marginLeft="@dimen/d80"
+            android:layout_marginRight="@dimen/d20"
+            android:background="@color/line_color" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d45"
+            android:background="@color/whiteColor"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/d15">
+
+            <TextView
+                android:layout_width="@dimen/d0"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/basic_message_12"
+                android:textColor="@color/loan_detail_text"
+                android:textSize="@dimen/s14" />
+
+            <EditText
+                android:id="@+id/basic_workPhone"
+                android:layout_width="@dimen/d0"
+                android:layout_height="wrap_content"
+                android:layout_weight="8"
+                android:background="@null"
+                android:hint="@string/basic_message_13"
+                android:inputType="number"
+                android:textColor="@color/loan_bank_text"
+                android:textSize="@dimen/s14" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/basic_submit"
+        style="@style/buttonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/submit" />
+
+</LinearLayout>

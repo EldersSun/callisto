@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/whiteColor"
+    android:id="@+id/ll_reading_tip"
+    android:layout_marginBottom="@dimen/d10"
+    android:orientation="vertical">
+
+    <!-- 顶部提示、按钮 -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/d10">
+
+        <TextView
+            android:id="@+id/tv_reading_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/Viedo_message_5"
+            android:textColor="@color/loan_big_text"
+            android:textSize="@dimen/s20" />
+
+
+        <Button
+            android:id="@+id/btn_start_record"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/d40"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btn_shape_selector_true"
+            android:paddingBottom="@dimen/d5"
+            android:paddingLeft="@dimen/d10"
+            android:paddingRight="@dimen/d10"
+            android:paddingTop="@dimen/d5"
+            android:text="开始朗读"
+            android:enabled="false"
+            android:textColor="@color/whiteColor"
+            android:textSize="@dimen/s16" />
+
+    </RelativeLayout>
+
+    <!-- 朗读的文字 -->
+    <GridView
+        android:id="@+id/gv_reading_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="11"
+        android:scrollbars="none" />
+
+
+</LinearLayout>

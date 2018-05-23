@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:scrollbars="none">
+
+
+    <!-- 顶部显示还款失败提示 -->
+    <LinearLayout
+        android:id="@+id/ll_fail_tip"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d30"
+        android:visibility="gone"
+        android:background="@color/loan_fail_tip_bg"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/d15"
+            android:layout_height="@dimen/d15"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/d15"
+            android:src="@drawable/repay_fail_tip" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/d5"
+            android:text="@string/repay_fail_tip"
+            android:textColor="#FF9D00"
+            android:textSize="@dimen/s12" />
+
+
+        <TextView
+            android:id="@+id/tv_show_fail_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/d5"
+            android:text="@string/repay_fail_show_detail"
+            android:textColor="#FF9D00"
+            android:textSize="@dimen/s12" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/whiteColor"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d120"
+                    android:layout_below="@+id/ll_content_view">
+
+                    <!-- 顶部轮播图片 -->
+                    <com.miaodao.Sys.Widgets.slidview.SlideShowView
+                        android:id="@+id/show_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <com.miaodao.Sys.Widgets.slidview.FlowIndicator
+                        android:id="@+id/indicator"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="@dimen/d10" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_scroll_text_loan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/appColor1"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="@dimen/d15"
+                        android:layout_height="@dimen/d15"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/editTextPadding"
+                        android:src="@mipmap/ic_speaker" />
+
+                    <com.miaodao.Sys.Widgets.VerticalTextView
+                        android:id="@+id/tv_loan_ad"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/d5" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- 各种贷款状态 -->
+            <FrameLayout
+                android:id="@+id/Loan_ContentLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <include
+                layout="@layout/fm_errorshow_layout"
+                android:visibility="gone" />
+
+            <include
+                layout="@layout/fm_sys_maintain"
+                android:visibility="gone" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

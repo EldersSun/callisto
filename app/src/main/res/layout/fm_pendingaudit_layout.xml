@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whiteColor"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:drawableLeft="@drawable/ic_archives_auditing"
+        android:drawablePadding="10dp"
+        android:paddingBottom="@dimen/d10"
+        android:paddingTop="@dimen/d10"
+        android:text="@string/penddingaudit_message_1"
+        android:textColor="@color/appColor"
+        android:textSize="18sp" />
+
+    <View style="@style/LineViewStyle" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/viewPaddingTop"
+        android:text="@string/penddingaudit_message_2"
+        android:textColor="@color/textColor"
+        android:textSize="@dimen/s16" />
+
+    <Button
+        android:id="@+id/pendingAudit_Submit"
+        style="@style/buttonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/penddingaudit_message_3" />
+
+</LinearLayout>

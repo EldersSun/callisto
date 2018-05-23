@@ -1,0 +1,11 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <size
+                android:width="10dp"
+                android:height="10dp" />
+            <solid android:color="@android:color/transparent" />
+        </shape>
+    </item>
+    <item android:drawable="@mipmap/ic_thumb_money" />
+</layer-list>

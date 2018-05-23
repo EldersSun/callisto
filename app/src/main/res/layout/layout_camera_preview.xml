@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blackColor">
+
+
+    <TextView
+        android:id="@+id/control_retake"
+        android:layout_width="@dimen/d60"
+        android:layout_height="@dimen/d60"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/d10"
+        android:layout_marginRight="@dimen/d10"
+        android:layout_marginTop="@dimen/d30"
+        android:gravity="center"
+        android:text="@string/re_picture"
+        android:textColor="@color/whiteColor"
+        android:textSize="@dimen/s16" />
+
+    <TextView
+        android:id="@+id/control_ok"
+        android:layout_width="@dimen/d60"
+        android:layout_height="@dimen/d60"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="@dimen/d10"
+        android:layout_marginRight="@dimen/d10"
+        android:background="@drawable/ic_idcard_btn_ok_pressed"
+        android:gravity="center"
+        android:text="@string/confirm"
+        android:textColor="@color/whiteColor"
+        android:textSize="@dimen/s16" />
+
+</RelativeLayout>

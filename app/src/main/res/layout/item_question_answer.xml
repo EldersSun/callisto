@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+
+    <ImageView
+        android:id="@+id/iv_select"
+        android:layout_width="@dimen/d15"
+        android:layout_height="@dimen/d15"
+        android:layout_marginLeft="@dimen/d10"
+        android:layout_marginTop="@dimen/d17"
+        android:src="@drawable/ic_ticket_btn_normal" />
+
+
+    <TextView
+        android:id="@+id/tv_answer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/d5"
+        android:layout_marginTop="@dimen/d10"
+        android:paddingBottom="@dimen/d5"
+        android:paddingTop="@dimen/d5"
+        android:textColor="@color/loan_bank_text"
+        android:textSize="@dimen/s14" />
+
+</LinearLayout>

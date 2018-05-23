@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+
+    <!-- 照片预览部分 -->
+    <!--<LinearLayout-->
+    <!--android:layout_width="@dimen/d0"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_weight="8"-->
+    <!--android:orientation="vertical">-->
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- 照片预览 -->
+        <ImageView
+            android:id="@+id/iv_preview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/lead"
+            android:scaleType="fitXY" />
+
+        <!-- 遮罩层 -->
+        <include layout="@layout/layout_id_preview_mask" />
+
+    </RelativeLayout>
+
+
+    <!--</LinearLayout>-->
+
+
+    <!-- 拍照控制部分 -->
+    <LinearLayout
+        android:layout_width="@dimen/d80"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:orientation="horizontal">
+
+        <include layout="@layout/layout_camera_preview" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

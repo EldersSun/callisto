@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/net_request_error_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <!--加载的进度条 -->
+    <ProgressBar
+        android:id="@+id/progress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d3"
+        android:progressDrawable="@drawable/progress_bg"
+        android:visibility="gone" />
+
+
+    <WebView
+        android:id="@+id/wv_show_set"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/progress"
+        android:layout_marginBottom="@dimen/d50" />
+
+
+    <TextView
+        android:id="@+id/tv_set_net"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d50"
+        android:layout_alignParentBottom="true"
+        android:background="@color/appColor"
+        android:gravity="center"
+        android:text="@string/net_go_set"
+        android:textColor="@color/whiteColor"
+        android:textSize="@dimen/s14" />
+
+
+</RelativeLayout>

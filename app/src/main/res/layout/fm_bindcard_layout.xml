@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 绑卡内容 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/TvShowMessageStyle"
+            android:drawableLeft="@drawable/global_icon_tips"
+            android:drawablePadding="@dimen/d3"
+            android:lines="1"
+            android:text="@string/bind_card_message_1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/viewMarginpadding"
+            android:background="@color/whiteColor"
+            android:orientation="vertical">
+
+            <!-- 填写卡号 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d45"
+                android:background="@color/whiteColor"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/d15">
+
+                <TextView
+                    android:layout_width="@dimen/d0"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="@string/bind_card_message_2"
+                    android:textColor="@color/loan_detail_text"
+                    android:textSize="@dimen/s14" />
+
+                <EditText
+                    android:id="@+id/bind_BankCard"
+                    android:layout_width="@dimen/d0"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="8"
+                    android:background="@null"
+                    android:hint="@string/bind_card_message_7"
+                    android:inputType="numberDecimal"
+                    android:maxLength="25"
+                    android:textStyle="bold"
+                    android:textColor="@color/loan_bank_text"
+                    android:textSize="@dimen/s14" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/d1"
+                android:layout_marginLeft="@dimen/d80"
+                android:layout_marginRight="@dimen/d20"
+                android:background="@color/line_color" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d45"
+                android:background="@color/whiteColor"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/d15">
+
+                <TextView
+                    android:layout_width="@dimen/d0"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="@string/bind_card_message_3"
+                    android:textColor="@color/loan_detail_text"
+                    android:textSize="@dimen/s14" />
+
+                <TextView
+                    android:id="@+id/bind_Bank"
+                    android:layout_width="@dimen/d0"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="8"
+                    android:background="@null"
+                    android:hint="@string/bind_card_message_8"
+                    android:textColor="@color/loan_bank_text"
+                    android:textSize="@dimen/s14" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/d1"
+                android:layout_marginLeft="@dimen/d80"
+                android:layout_marginRight="@dimen/d20"
+                android:background="@color/line_color" />
+
+            <RelativeLayout
+                android:id="@+id/show_bind_city"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d45"
+                android:paddingLeft="@dimen/d15">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/whiteColor"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="@dimen/d0"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="@string/bind_card_message_4"
+                        android:textColor="@color/loan_detail_text"
+                        android:textSize="@dimen/s14" />
+
+
+                    <TextView
+                        android:id="@+id/bind_City"
+                        android:layout_width="@dimen/d0"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="8"
+                        android:enabled="false"
+                        android:background="@null"
+                        android:text="@string/bind_card_message_9"
+                        android:textColor="@color/loan_bank_text"
+                        android:textSize="@dimen/s14" />
+                </LinearLayout>
+
+
+                <ImageView
+                    android:layout_width="@dimen/d20"
+                    android:layout_height="@dimen/d20"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/d20"
+                    android:src="@drawable/ic_archive_add_card" />
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/viewMarginpadding"
+            android:background="@color/whiteColor"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d45"
+                android:background="@color/whiteColor"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/d15">
+
+                <TextView
+                    android:layout_width="@dimen/d0"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.5"
+                    android:text="@string/bind_card_message_5"
+                    android:textColor="@color/loan_detail_text"
+                    android:textSize="@dimen/s14" />
+
+                <EditText
+                    android:id="@+id/bind_BankPhone"
+                    android:layout_width="@dimen/d0"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="8"
+                    android:background="@null"
+                    android:hint="@string/bind_card_message_10"
+                    android:inputType="numberDecimal"
+                    android:maxLength="11"
+                    android:textColor="@color/loan_bank_text"
+                    android:textSize="@dimen/s14" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/d1"
+                android:layout_marginLeft="@dimen/d80"
+                android:layout_marginRight="@dimen/d20"
+                android:background="@color/line_color" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d45"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d45"
+                    android:background="@color/whiteColor"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/d15">
+
+                    <TextView
+                        android:layout_width="@dimen/d0"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2.5"
+                        android:text="@string/bind_card_message_6"
+                        android:textColor="@color/loan_detail_text"
+                        android:textSize="@dimen/s14" />
+
+                    <EditText
+                        android:id="@+id/bind_BankInputCode"
+                        android:layout_width="@dimen/d0"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="8"
+                        android:background="@null"
+                        android:hint="@string/bind_card_message_11"
+                        android:inputType="numberDecimal"
+                        android:textColor="@color/loan_bank_text"
+                        android:textSize="@dimen/s14" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/bind_BankCode"
+                    style="@style/btn_verify"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            style="@style/TvShowMessageStyle"
+            android:layout_marginTop="30dp"
+            android:background="@color/transparentColor"
+            android:gravity="center_horizontal"
+            android:text="@string/bind_card_message_12" />
+
+        <Button
+            android:id="@+id/bind_submit"
+            style="@style/buttonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/submit" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/d10"
+            android:gravity="center_horizontal"
+            android:text="-----------目前支持的银行范围如下-----------"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/s12" />
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_bank"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/d20"
+            android:layout_marginRight="@dimen/d10" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_scale_num"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/d40"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/d10"
+        android:paddingRight="@dimen/d10"
+        android:textColor="@color/appColor2"
+        android:textSize="@dimen/s18"
+        android:visibility="gone"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/d25"
+        android:layout_marginLeft="@dimen/d70"
+        android:background="@color/appColor3"/>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>保存二维码</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        
+        body {
+            padding: 0;
+            margin: 0;
+            background-color: white;
+        }
+        
+        .wechat_ma {
+            width: 3.5rem;
+            height: 3.5rem;
+            margin: 1rem auto;
+            background-image: url("file:///android_res/drawable/follow_wechat_ma.jpg");
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: 100% auto;
+        }
+        
+        .save {
+            width: 6rem;
+            height: 1.2rem;
+            background-color: #3196FE;
+            margin: auto;
+            font-size: .5rem;
+            line-height: 1.2rem;
+            text-align: center;
+            border-radius: 5px;
+            color: white;
+        }
+        
+        .tips {
+            background-image: url("file:///android_res/drawable/follow_scan_bottom.jpg");
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: auto 100%;
+            width: 10rem;
+            height: 9.292rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wechat_ma">
+    </div>
+    <div class="save" onclick="window.follow.saveImg()">
+        保存二维码到相册
+    </div>
+    <div class="tips">
+    </div>
+</body>
+<script>
+    document.getElementsByTagName('html')[0].style.fontSize = window.screen.width / 10 + 'px';
+</script>
+</html>

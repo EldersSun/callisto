@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <!-- 步骤图片 -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d100"
+        android:padding="@dimen/d10"
+        android:src="@drawable/zhima_buzou" />
+
+
+    <!-- 输入姓名 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d45"
+        android:background="@color/whiteColor"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/d20">
+
+        <TextView
+            android:layout_width="@dimen/d80"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="姓名"
+            android:textColor="@color/loan_big_text"
+            android:textSize="@dimen/s16" />
+
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:hint="请输入真实姓名"
+            android:textColor="@color/loan_bank_text"
+            android:textColorHint="@color/loan_time_text"
+            android:textSize="@dimen/s16" />
+
+
+    </LinearLayout>
+
+    <!-- 输入身份证 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d45"
+        android:layout_marginTop="@dimen/d1"
+        android:background="@color/whiteColor"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/d20">
+
+        <TextView
+            android:layout_width="@dimen/d80"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="身份证号"
+            android:textColor="@color/loan_big_text"
+            android:textSize="@dimen/s16" />
+
+
+        <EditText
+            android:id="@+id/et_id_card"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:hint="请输入您的身份证号"
+            android:maxLength="18"
+            android:inputType="textVisiblePassword"
+            android:textColor="@color/loan_bank_text"
+            android:textColorHint="@color/loan_time_text"
+            android:textSize="@dimen/s16" />
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/d20"
+        android:text="以上信息用用于确认您的身份"
+        android:textColor="@color/loan_bank_text"
+        android:textSize="@dimen/s12" />
+
+
+    <!-- 授权按钮 -->
+    <Button
+        android:id="@+id/btn_zima_author"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d40"
+        android:layout_marginLeft="@dimen/d20"
+        android:layout_marginRight="@dimen/d20"
+        android:background="@drawable/zhima_btn"
+        android:text="立即授权"
+        android:textColor="@color/whiteColor"
+        android:textSize="@dimen/s16" />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/d20"
+        android:src="@drawable/zhima_bottom_img" />
+
+
+</LinearLayout>

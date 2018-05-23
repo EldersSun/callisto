@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btn_not_use_can"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d40"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/d10"
+        android:layout_marginRight="@dimen/d10"
+        android:background="@color/whiteColor"
+        android:text="不使用优惠券"
+        android:textColor="@color/appColor"
+        android:textSize="@dimen/s16"
+        android:visibility="gone" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_coupon"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/d40"/>
+
+
+    <ImageView
+        android:id="@+id/iv_empty"
+        android:layout_width="@dimen/d150"
+        android:layout_height="@dimen/d150"
+        android:layout_centerInParent="true"
+        android:src="@drawable/coupon_empty"
+        android:visibility="gone" />
+
+
+</RelativeLayout>

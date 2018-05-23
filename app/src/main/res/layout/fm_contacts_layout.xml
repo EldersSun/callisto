@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/whiteColor"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:drawableLeft="@drawable/global_icon_tips"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:lines="1"
+            android:paddingRight="0dp"
+            android:text="@string/contacts_message_1"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/s12" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@color/transparentColor"
+            android:gravity="center"
+            android:lines="1"
+            android:text="@string/contacts_message_2"
+            android:textColor="@color/appColor"
+            android:textSize="@dimen/s12" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/viewPaddingTop"
+        android:background="@color/whiteColor"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d45"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/d5"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/contacts_message_5"
+                android:textColor="@color/loan_big_text"
+                android:textSize="@dimen/s14" />
+
+            <EditText
+                android:id="@+id/contacts_Family_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@color/transparentColor"
+                android:minHeight="@dimen/RowHeight_m"
+                android:textSize="@dimen/contentTextSize_l" />
+
+            <TextView
+                android:id="@+id/contacts_Family_phone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:lines="1"
+                android:padding="@dimen/contentTextSize_l"
+                android:textSize="@dimen/contentTextSize_l" />
+
+            <Button
+                android:id="@+id/contacts_Family_selector"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/d30"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/d20"
+                android:layout_weight="0.8"
+                android:background="@drawable/linearframe"
+                android:padding="8dp"
+                android:text="@string/selector"
+                android:textColor="@color/appColor"
+                android:textSize="@dimen/contentTextSize_l" />
+        </LinearLayout>
+
+        <View style="@style/style_contacts"
+            android:layout_marginLeft="@dimen/d70"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d45"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/d5"
+                android:layout_weight="1"
+
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/contacts_message_6"
+                android:textColor="@color/loan_big_text"
+                android:textSize="@dimen/s14" />
+
+            <EditText
+                android:id="@+id/contacts_Friend_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@color/transparentColor"
+                android:minHeight="@dimen/RowHeight_m"
+                android:textSize="@dimen/contentTextSize_l" />
+
+            <TextView
+                android:id="@+id/contacts_Friend_phone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:lines="1"
+                android:padding="15dp"
+                android:textSize="@dimen/contentTextSize_l" />
+
+            <Button
+                android:id="@+id/contacts_Friend_selector"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/d30"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/d20"
+                android:layout_weight="0.8"
+                android:background="@drawable/linearframe"
+                android:padding="8dp"
+                android:text="@string/selector"
+                android:textColor="@color/appColor"
+                android:textSize="@dimen/contentTextSize_l" />
+        </LinearLayout>
+
+        <View style="@style/style_contacts"
+            android:layout_marginLeft="@dimen/d70"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d45"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/d5"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/contacts_message_7"
+                android:textColor="@color/loan_big_text"
+                android:textSize="@dimen/s14" />
+
+            <EditText
+                android:id="@+id/contacts_Colleague_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@color/transparentColor"
+                android:minHeight="@dimen/RowHeight_m"
+                android:textSize="@dimen/contentTextSize_l" />
+
+            <TextView
+                android:id="@+id/contacts_Colleague_phone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:lines="1"
+                android:padding="15dp"
+                android:textSize="@dimen/contentTextSize_l" />
+
+            <Button
+                android:id="@+id/contacts_Colleague_selector"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/d30"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/d20"
+                android:layout_weight="0.8"
+                android:background="@drawable/linearframe"
+                android:padding="8dp"
+                android:text="@string/selector"
+                android:textColor="@color/appColor"
+                android:textSize="@dimen/contentTextSize_l" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/contacts_submit"
+        style="@style/buttonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/submit" />
+
+</LinearLayout>

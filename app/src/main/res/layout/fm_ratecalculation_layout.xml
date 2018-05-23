@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="10dp"
+        android:background="@color/whiteColor"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TextStyle1"
+                    android:text="@string/ratecalculation_message_1"
+                    android:textColor="@color/textColor"
+                    android:textSize="16sp" />
+
+                <TextView
+                    style="@style/TextStyle1"
+                    android:text="@string/ratecalculation_message_2"
+                    android:textColor="@color/textColor"
+                    android:textSize="16sp" />
+
+                <TextView
+                    style="@style/TextStyle1"
+                    android:text="@string/ratecalculation_message_3"
+                    android:textColor="@color/textColor"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d60"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lation_amount_TvShow"
+                    style="@style/TextStyle1"
+                    android:lines="1"
+                    android:textColor="@color/appColor2"
+                    android:textSize="@dimen/s24" />
+
+                <TextView
+                    android:id="@+id/lation_day_TvShow"
+                    style="@style/TextStyle1"
+                    android:textColor="@color/appColor"
+                    android:textSize="@dimen/s24" />
+
+                <TextView
+                    android:id="@+id/lation_returnAmount_TvShow"
+                    style="@style/TextStyle1"
+                    android:lines="1"
+                    android:textColor="@color/appColor2"
+                    android:textSize="@dimen/s24" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/ratecalculation_message_1"
+                android:textColor="@color/textColor"
+                android:textSize="14sp" />
+
+            <SeekBar
+                android:id="@+id/lation_amount_SeekBar"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:max="45"
+                android:maxHeight="@dimen/d5"
+                android:maxWidth="10dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:progressDrawable="@drawable/loan_seekbar_img"
+                android:thumb="@mipmap/ic_thumb_money" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/ratecalculation_message_2"
+                android:textColor="@color/textColor"
+                android:textSize="14sp" />
+
+            <SeekBar
+                android:id="@+id/lation_amount_Day"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:max="30"
+                android:maxHeight="@dimen/d5"
+                android:maxWidth="10dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:progressDrawable="@drawable/seekbar_img_2"
+                android:thumb="@mipmap/ic_thumb_day" />
+        </LinearLayout>
+
+        <WebView
+            android:id="@+id/lation_amount_webView"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="@dimen/d10"
+            android:scrollbars="none" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/d10">
+
+        <RelativeLayout
+            android:id="@+id/accountCar_Item_Layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/car_layoutback_color"
+            android:minHeight="80dp"
+            android:padding="@dimen/d8">
+
+            <ImageView
+                android:id="@+id/accountCar_Item_imgShow"
+                android:layout_width="@dimen/d40"
+                android:layout_height="@dimen/d40"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/d10"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:id="@+id/accountCar_Item_CarName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/d15"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/accountCar_Item_imgShow"
+                android:textColor="@color/whiteColor"
+                android:textSize="@dimen/s16"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/accountCar_Item_CarType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/accountCar_Item_CarName"
+                android:layout_marginLeft="@dimen/d15"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/accountCar_Item_imgShow"
+                android:text="@string/carType_1"
+                android:textColor="@color/whiteColor"
+                android:textSize="@dimen/s12"
+                android:textStyle="normal" />
+
+            <Button
+                android:id="@+id/accountCar_Item_CarSet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/car_list"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:text="@string/set"
+                android:textColor="@color/whiteColor"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/accountCar_Item_CarNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/accountCar_Item_CarSet"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:lines="1"
+                android:textColor="@color/whiteColor"
+                android:textSize="@dimen/s16" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

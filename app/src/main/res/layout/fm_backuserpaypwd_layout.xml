@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/whiteColor"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/backUserPayPwd_Tel"
+            style="@style/EditTextStyle"
+            android:hint="@string/backUserPwd_message_1" />
+
+        <View style="@style/LineViewStyle" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/backUserPayPwd_inputcode"
+                style="@style/EditTextStyle"
+                android:layout_width="0dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="2"
+                android:hint="@string/reg_inputcodeHint"
+                android:inputType="number" />
+
+            <Button
+                android:id="@+id/backUserPayPwd_getCode"
+                style="@style/btn_verify" />
+
+        </LinearLayout>
+
+        <View style="@style/LineViewStyle" />
+
+        <LinearLayout
+            android:id="@+id/backUserPayPwd_IdCarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/backUserPayPwd_IdCode"
+                style="@style/EditTextStyle"
+                android:hint="@string/backUserPwd_message_2" />
+
+            <View style="@style/LineViewStyle" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/BackserPayPwd_NewPwd"
+            style="@style/EditTextStylePD"
+            android:hint="@string/backUserPwd_message_3"
+            android:inputType="textPassword" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/backUserPayPwd_submit"
+        style="@style/buttonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/submit" />
+
+</LinearLayout>

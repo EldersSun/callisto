@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/viewPaddingTop"
+            android:background="@color/whiteColor"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/reg_account"
+                style="@style/EditTextStyle"
+                android:inputType="numberDecimal"
+                android:hint="@string/reg_inputAccountHint" />
+
+            <View style="@style/LineViewStyle" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/reg_pwd"
+                    style="@style/EditTextStylePD"
+                    android:hint="@string/reg_inputPwdHint"
+                    android:inputType="textPassword" />
+
+                <CheckBox
+                    android:id="@+id/reg_selectorShowPwd"
+                    android:layout_width="@dimen/d30"
+                    android:layout_height="@dimen/d15"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/selectorshowpwd"
+                    android:button="@null"
+                    android:padding="@dimen/d10" />
+
+            </RelativeLayout>
+
+            <View style="@style/LineViewStyle" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/reg_inputcode"
+                    style="@style/EditTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:hint="@string/reg_inputcodeHint"
+                    android:inputType="number" />
+
+                <Button
+                    android:id="@+id/reg_getCode"
+                    style="@style/btn_verify"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true" />
+
+            </RelativeLayout>
+
+            <View style="@style/LineViewStyle" />
+
+            <EditText
+                android:id="@+id/et_invited_code"
+                style="@style/inviteEditTextStyle"
+                android:hint="@string/reg_invited_code" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/reg_submit"
+            style="@style/buttonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/reg" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/buttonMarginLeft"
+            android:layout_marginRight="@dimen/buttonMarginRight">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/reg_message_1" />
+
+            <Button
+                android:id="@+id/reg_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/register_btn_bg"
+                android:paddingBottom="@dimen/d3"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="@dimen/d3"
+                android:text="@string/login" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:paddingBottom="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/reg_message_2"
+            android:textSize="@dimen/uiContentTextSize_s" />
+
+        <Button
+            android:id="@+id/reg_RegistrationProtocol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/transparentColor"
+            android:text="@string/reg_message_3"
+            android:textColor="@color/appColor" />
+    </LinearLayout>
+
+</RelativeLayout>

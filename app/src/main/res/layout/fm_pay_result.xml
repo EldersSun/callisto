@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/iv_pay_stat"
+        android:layout_width="@dimen/d80"
+        android:layout_height="@dimen/d80"
+        android:layout_marginTop="@dimen/d50"
+        android:scaleType="fitXY"/>
+
+
+    <TextView
+        android:id="@+id/tv_pay_stat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/d20"
+        android:textColor="@color/appColor"
+        android:textSize="@dimen/s20" />
+
+
+    <TextView
+        android:id="@+id/tv_pay_say"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/d10"
+        android:textColor="@color/pay_result_gray"
+        android:textSize="@dimen/s14" />
+
+
+    <TextView
+        android:id="@+id/tv_pay_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/d15"
+        android:textColor="#444444"
+        android:textSize="@dimen/s36" />
+
+
+    <Button
+        android:id="@+id/btn_pay"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d45"
+        android:layout_marginLeft="@dimen/d20"
+        android:layout_marginRight="@dimen/d20"
+        android:layout_marginTop="@dimen/d30"
+        android:background="@drawable/btn_shape_backgroup_color"
+        android:textColor="@color/whiteColor"
+        android:textSize="@dimen/s18" />
+
+
+</LinearLayout>

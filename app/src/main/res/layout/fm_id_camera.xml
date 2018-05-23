@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <!-- 照片预览 -->
+    <SurfaceView
+        android:id="@+id/sur_preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+    <View
+        android:id="@+id/focus_index"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/camera_focus"
+        android:visibility="invisible" />
+
+    <!-- 遮罩层 -->
+    <include layout="@layout/layout_id_mask" />
+
+    <!-- 拍照控制部分 -->
+    <LinearLayout
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:orientation="horizontal">
+
+        <include layout="@layout/layout_camera_control" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>
